@@ -7,7 +7,8 @@ The ipset command doesn't work under OpenVZ. It works fine on dedicated and full
 
 ## Quick start for Debian/Ubuntu based installations
 Do
-curl -sSL https://raw.githubusercontent.com/bryanroscoe/ipset-blacklist/master/installUbuntu14_04.sh | bash
+As root do
+curl -sSL https://raw.githubusercontent.com/trick77/ipset-blacklist/master/installUbuntu14_04.sh | bash
 
 or
 
