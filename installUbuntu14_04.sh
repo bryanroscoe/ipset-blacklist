@@ -13,11 +13,11 @@ done
 mkdir /etc/ipset-blacklist
 
 #Put update script in cron daily to keep it up to date
-\curl -sSL https://raw.githubusercontent.com/trick77/ipset-blacklist/master/update-blacklist.sh > /etc/cron.daily/update-blacklist.sh
+\curl -sSL https://raw.githubusercontent.com/bryanroscoe/ipset-blacklist/master/update-blacklist.sh > /etc/cron.daily/update-blacklist.sh
 chmod +x /etc/cron.daily/update-blacklist.sh
 
 #This runs every time the network is brought up (so you have blocks at reboot)
-\curl -sSL https://raw.githubusercontent.com/trick77/ipset-blacklist/master/blacklistInit >  /etc/network/if-pre-up.d/blacklistInit
+\curl -sSL https://raw.githubusercontent.com/bryanroscoe/ipset-blacklist/master/blacklistInit >  /etc/network/if-pre-up.d/blacklistInit
 chmod +x /etc/network/if-pre-up.d/blacklistInit
 
 #Create the needed ipset
